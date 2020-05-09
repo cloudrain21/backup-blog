@@ -34,6 +34,11 @@ func (s SSH) RunCommand(command string) error {
 	return nil
 }
 
+func (s *SSH) Close() {
+	s.conn.Close()
+	s.conn = nil
+}
+
 func NewSSH(url string, user string, pass string) *SSH {
 	return &SSH{url, user, pass, nil}
 }
