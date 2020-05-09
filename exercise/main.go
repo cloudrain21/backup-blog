@@ -7,7 +7,7 @@ import (
 	"path"
 )
 
-// mysql : mysql --host=db.cloudrain21.com --port=3306 -ucloudrain21 -p
+// mysql : mysql --host=db.cloudrain21.com --port=3306 -uuser -p
 
 func main() {
 	if len(os.Args) < 2 {
